@@ -24,5 +24,8 @@
     <ClCompile Include="LeetCode02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode03.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
