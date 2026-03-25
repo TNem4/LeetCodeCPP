@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="LeetCode01.cpp" />
+    <ClCompile Include="LeetCode02.cpp" />
     <ClCompile Include="LeetCodeCPP.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
