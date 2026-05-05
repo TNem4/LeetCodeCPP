@@ -1,0 +1,31 @@
+class Solution {
+public:
+    int expand(int left, int right, string_view s)
+    {
+        while (left >= 0 && right < s.size() && s[left] == s[right])
+        {
+            left--;
+            right++;
+        }
+        return right - left - 1;
+    };
+    string longestPalindrome(string s) {
+
+        int start{ 0 };
+        int maxLen{ 1 };
+
+
+        for (int i{ 0 }; i < s.length(); ++i)
+        {
+            int len{ max(expand(i,i,s), expand(i,i + 1,s)) };
+
+            if (len > maxLen)
+            {
+                maxLen = len;
+                start = i - (len - 1) / 2;
+            }
+        }
+
+        return s.substr(start, maxLen);
+    }
+};
